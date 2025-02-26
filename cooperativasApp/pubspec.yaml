@@ -1,0 +1,26 @@
+name: nombre_del_proyecto
+description: Aplicación de cooperativas
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  sqflite: ^2.0.0+3
+  sqflite_common_ffi: ^2.1.0
+  sqflite_common: ^2.1.0
+  sqflite_common_ffi_web: ^0.4.5+4
+  provider: ^6.1.1
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  build_runner: ^2.4.13
+  http: ^0.13.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  sqflite_common_ffi: ^2.3.0
+
+flutter:
+  uses-material-design: true
