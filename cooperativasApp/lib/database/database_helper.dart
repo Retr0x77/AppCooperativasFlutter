@@ -121,7 +121,7 @@ class DatabaseHelper {
     print('Número de usuarios en la base de datos: $userCount');
   }
 
-  // -------------------- Operaciones para Cooperativas --------------------
+
   Future<int> insertCooperative(Cooperative cooperative) async {
     final db = await database;
     return await db.insert(
@@ -146,7 +146,7 @@ class DatabaseHelper {
     );
   }
 
-  // -------------------- Operaciones para Miembros --------------------
+
   Future<void> insertMiembro(Member member, String cooperativeId) async {
     final db = await database;
     await db.insert(
@@ -175,7 +175,7 @@ class DatabaseHelper {
             ));
   }
 
-  // -------------------- Operaciones para Usuarios --------------------
+ 
   Future<int> insertUsuario(User user) async {
     final db = await database;
     return await db.insert(
@@ -213,7 +213,7 @@ class DatabaseHelper {
     return null;
   }
 
-  // -------------------- Métodos Adicionales --------------------
+
   Future<void> close() async {
     final db = await database;
     db.close();
