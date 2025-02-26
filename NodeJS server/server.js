@@ -134,8 +134,7 @@ app.post('/login', async (req, res) => {
       if (!user) {
         return res.status(401).json({ error: "Usuario no encontrado" });
       }
-      // Aquí deberías comparar la contraseña hasheada
-      // Por ahora, asumimos que la autenticación es exitosa
+
       res.json({ message: "Login successful", user: { id: user.id, email: user.email, name: user.name } });
     });
   } catch (err) {
